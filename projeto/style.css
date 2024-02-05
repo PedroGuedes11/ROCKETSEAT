@@ -119,11 +119,10 @@ body * {
   /* posicao absoluta relativa a tag pai */
   position: absolute;
   /* ficara no canto esquerdo */
-  right: 0;
+  left: 0;
   /* controle de camadas (layers) para sobreposicao de elementos */
   z-index: 1;
-  transform: translateX(-100%);
-  transition: all 1s;
+  animation: slide-back 1s;
   width: 32px;
   height: 32px;
   border: 0;
@@ -133,9 +132,13 @@ body * {
 
 /* BOTAO COM SVG LIGHT */
 .light #switch button {
-  /* efeito de scroll do botao, fazendo o elemento caminhar no eixo x */
-  transform: translateX(1%);
-  transition: all 1s;
+  /* animacao de scroll do botao criada no documento abaixo (forwards mantem a posicao do botao ao final da animacao) */
+  animation: slide-in 1s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+  transition: outline 0.5s;
 }
 
 /* FUNDO PARA EFEITO SCROLL DO BOTAO */
@@ -226,5 +229,23 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
   }
 }
