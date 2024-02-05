@@ -12,3 +12,5 @@ git log : listar os commits realizados
 
 git config --global user.name "Name"
 git config --global user.email "Email@email.com"
+
+git push
