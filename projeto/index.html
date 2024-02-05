@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <!-- informacoes da pagina -->
+  <head>
+    <!-- fontes importadas do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- charset define quais caracteres serao aceitos na pagina, neste caso UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- define que a viewport (parte visivel) tera o tamanho da janela-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- define o titulo da pagina que aparecera na aba do browser -->
+    <title>Projeto</title>
+
+    <!-- linkando a pagina de estilo, ./ pq esta na mesma pasta do documento HTML-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <!-- no caso o viewport seria o body (corpo da pagina) -->
+  <body>
+    <!-- tudo sao caixas -->
+    <div id="container">
+      <div id="profile">
+        <!-- alt seria o que apareceria caso a foto nao seja encontrada, mas tambem como os motores de busca a identificarao (tambem utilizado na acessibilidade) -->
+        <img src="./assets/avatar.png" alt="Foto de perfil do Pedro Guedes" />
+        <p>@pedrinhofutsal11</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="" target="_blank">Botao 1</a>
+        </li>
+        <li>
+          <a href="" target="_blank">Botao 2</a>
+        </li>
+        <li>
+          <a href="" target="_blank">Botao 3</a>
+        </li>
+        <li>
+          <a href="" target="_blank">Botao 4</a>
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+      <footer>Feito com ♥ por <a href="#">Pedro Guedes</a></footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./script.js"></script>
+</html>

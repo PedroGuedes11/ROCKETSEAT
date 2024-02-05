@@ -1,0 +1,9 @@
+git init : ira iniciar um repositorio no diretorio onde o comando foi executado, ou seja, cria uma pasta escondida chamada git
+
+git add . ou arquivo : adiciona as modificacoes nos documentos antes de dar o commit
+
+git commit - m : adiciona as mudanças de maneira armazenada com uma mensagem atrelada ao commit
+
+git push : 
+
+git -v : consulta a versao do git 
