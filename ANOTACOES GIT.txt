@@ -7,3 +7,8 @@ git commit - m : adiciona as mudanças de maneira armazenada com uma mensagem at
 git push : 
 
 git -v : consulta a versao do git 
+
+git log : listar os commits realizados
+
+git config --global user.name "Name"
+git config --global user.email "Email@email.com"
